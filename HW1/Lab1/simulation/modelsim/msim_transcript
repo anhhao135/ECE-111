@@ -1,0 +1,69 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do decoder_2to4_behavioral_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW1/Lab1 {C:/Repos/ECE-111/Quartus-Projects/HW1/Lab1/fulladder_behavioral.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:35 on Jan 13,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/HW1/Lab1" C:/Repos/ECE-111/Quartus-Projects/HW1/Lab1/fulladder_behavioral.sv 
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 21:35:35 on Jan 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW1/Lab1/fulladder_behavioral.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:44 on Jan 13,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW1/Lab1/fulladder_behavioral.sv 
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 21:35:44 on Jan 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW1/Lab1/fulladder_testbench.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:44 on Jan 13,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW1/Lab1/fulladder_testbench.sv 
+# -- Compiling module fulladder_testbench
+# 
+# Top level modules:
+# 	fulladder_testbench
+# End time: 21:35:44 on Jan 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.fulladder_testbench
+# vsim work.fulladder_testbench 
+# Start time: 21:35:49 on Jan 13,2022
+# Loading sv_std.std
+# Loading work.fulladder_testbench
+# Loading work.fulladder
+add wave sim:/fulladder_testbench/design_instance/*
+run -all
+#  time=0   a=0   b=0   c=0   sum=0   cout=0
+# 
+#  time=150   a=1   b=0   c=0   sum=1   cout=0
+# 
+#  time=200   a=0   b=1   c=0   sum=1   cout=0
+# 
+#  time=250   a=1   b=1   c=0   sum=0   cout=1
+# 
+#  time=300   a=0   b=0   c=1   sum=1   cout=0
+# 
+#  time=350   a=1   b=0   c=1   sum=0   cout=1
+# 
+#  time=400   a=0   b=1   c=1   sum=0   cout=1
+# 
+#  time=450   a=1   b=1   c=1   sum=1   cout=1
+# 
+# End time: 21:37:01 on Jan 13,2022, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 0

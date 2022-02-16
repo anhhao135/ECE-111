@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/simulation/modelsim
+vlfsr
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1643962585
+!i10b 1
+!s100 KmbWWi=FEQ?c_aoQlTJl20
+IE0gjG>1j6R1eZ6ceD]K1i1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 lfsr_sv_unit
+S1
+R0
+w1643961794
+8C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr.sv
+FC:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr.sv
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1643962585.000000
+!s107 C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr.sv|
+!s90 -reportprogress|300|-work|work|C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr.sv|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vlfsr_testbench
+R1
+!s110 1643962586
+!i10b 1
+!s100 X]<f[E8:OPG68;6F]PghR0
+IPIYh[23:od0BTaXVCh5G01
+R2
+!s105 lfsr_testbench_sv_unit
+S1
+R0
+w1643947066
+8C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr_testbench.sv
+FC:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr_testbench.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr_testbench.sv|
+!s90 -reportprogress|300|-work|work|C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr_testbench.sv|
+!i113 1
+R5
+R6

@@ -1,0 +1,92 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do carry_lookahead_adder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder {C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/fulladder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:39 on Feb 13,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder" C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/fulladder.sv 
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 14:54:39 on Feb 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder {C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/carry_lookahead_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:54:39 on Feb 13,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder" C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/carry_lookahead_adder.sv 
+# -- Compiling module carry_lookahead_adder
+# ** Error: C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/carry_lookahead_adder.sv(8): (vlog-2730) Undefined variable: 'l_carry'.
+# ** Error (suppressible): C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/carry_lookahead_adder.sv(11): (vlog-2388) 'l_carry' already declared in this scope (carry_lookahead_adder).
+# End time: 14:54:39 on Feb 13,2022, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./carry_lookahead_adder_run_msim_rtl_verilog.do line 9
+# C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder {C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahe..."
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/carry_lookahead_adder.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:34 on Feb 13,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/carry_lookahead_adder.sv 
+# -- Compiling module carry_lookahead_adder
+# 
+# Top level modules:
+# 	carry_lookahead_adder
+# End time: 14:55:34 on Feb 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/carry_lookahead_adder_testbench.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:34 on Feb 13,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/carry_lookahead_adder_testbench.sv 
+# -- Compiling module carry_lookahead_adder_testbench
+# 
+# Top level modules:
+# 	carry_lookahead_adder_testbench
+# End time: 14:55:34 on Feb 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/fulladder.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:55:34 on Feb 13,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW5/Lab5/carry_lookahead_adder/fulladder.sv 
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 14:55:34 on Feb 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.carry_lookahead_adder_testbench
+# vsim work.carry_lookahead_adder_testbench 
+# Start time: 14:55:38 on Feb 13,2022
+# Loading sv_std.std
+# Loading work.carry_lookahead_adder_testbench
+# Loading work.carry_lookahead_adder
+# Loading work.fulladder
+add wave sim:/carry_lookahead_adder_testbench/design_instance/*
+# Break key hit
+run -all
+#  time=0   A= 0   B= 0   CIN=0   result= 0
+# 
+#  time=100   A= 2   B= 1   CIN=1   result= 4
+# 
+#  time=150   A= 1   B= 1   CIN=0   result= 2
+# 
+#  time=200   A= 2   B= 2   CIN=0   result= 4
+# 
+#  time=250   A= 3   B= 1   CIN=0   result= 4
+# 
+#  time=300   A= 4   B= 7   CIN=1   result=12
+# 
+#  time=350   A=15   B= 2   CIN=0   result=17
+# 
+#  time=400   A=10   B= 5   CIN=0   result=15
+# 

@@ -1,0 +1,133 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Repos/ECE-111/Quartus-Projects/HW2/simulation/modelsim
+vdown_counter
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1642738724
+!i10b 1
+!s100 B[W75`::SRBieDm1FDk0=2
+ITA;lTbjC;A7J?CeSBNdg;3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 down_counter_sv_unit
+S1
+R0
+w1642738683
+8C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/down_counter.sv
+FC:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/down_counter.sv
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1642738724.000000
+!s107 C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/down_counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter|C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/down_counter.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter
+Z8 tCvgOpt 0
+vmux_2x1
+R1
+R2
+!i10b 1
+!s100 91no:16XMO:SU^kaXbo:F3
+IC`4RZbcLnEb_^]IE[YLEh1
+R3
+!s105 mux_2x1_sv_unit
+S1
+R0
+w1642718657
+8C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/mux_2x1.sv
+FC:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/mux_2x1.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/mux_2x1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter|C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/mux_2x1.sv|
+!i113 1
+R6
+R7
+R8
+vup_counter
+R1
+R2
+!i10b 1
+!s100 d`j`>MC`d`OWS=[AH48lb2
+I92e]5NAY4RHiCa7Lc2LYb0
+R3
+!s105 up_counter_sv_unit
+S1
+R0
+w1642218546
+8C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_counter.sv
+FC:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_counter.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter|C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_counter.sv|
+!i113 1
+R6
+R7
+R8
+vup_down_counter
+R1
+Z9 !s110 1642738735
+!i10b 1
+!s100 jhS>0SWZLWOWn>F1;LMn51
+IDSLYWik>X2aCIBAoQI<1n2
+R3
+!s105 up_down_counter_sv_unit
+S1
+R0
+w1642718768
+8C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter.sv
+FC:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter.sv
+L0 2
+R4
+r1
+!s85 0
+31
+Z10 !s108 1642738735.000000
+!s107 C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter.sv|
+!s90 -reportprogress|300|-work|work|C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter.sv|
+!i113 1
+Z11 o-work work
+R8
+vup_down_counter_testbench
+R1
+R9
+!i10b 1
+!s100 ;X6OSaeC5f^3ZOjQ1LbN=2
+I:6:FHJBGaiP]NJ3R^dZkk1
+R3
+!s105 up_down_counter_testbench_sv_unit
+S1
+R0
+w1642220490
+8C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter_testbench.sv
+FC:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter_testbench.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter_testbench.sv|
+!s90 -reportprogress|300|-work|work|C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter_testbench.sv|
+!i113 1
+R11
+R8

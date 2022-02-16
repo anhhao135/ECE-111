@@ -1,0 +1,20 @@
+Analysis & Synthesis Status : Successful - Thu Jan 13 21:48:16 2022
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : decoder_2to4_behavioral
+Top-level Entity Name : decoder
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 4
+    Memory ALUTs : 0
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 6
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0

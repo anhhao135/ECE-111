@@ -1,0 +1,246 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
+
+// DATE "01/13/2022 21:48:30"
+
+// 
+// Device: Altera EP2AGX45DF29I5 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (SystemVerilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module decoder (
+	sel,
+	out);
+input 	[1:0] sel;
+output 	[3:0] out;
+
+// Design Ports Information
+// out[0]	=>  Location: PIN_AH7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[1]	=>  Location: PIN_AG9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[2]	=>  Location: PIN_AH9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// out[3]	=>  Location: PIN_AH8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sel[0]	=>  Location: PIN_AG6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sel[1]	=>  Location: PIN_AB14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \out[0]~output_o ;
+wire \out[1]~output_o ;
+wire \out[2]~output_o ;
+wire \out[3]~output_o ;
+wire \sel[0]~input_o ;
+wire \sel[1]~input_o ;
+wire \g0~combout ;
+wire \g1~0_combout ;
+wire \g1~1_combout ;
+wire \g1~2_combout ;
+
+
+// Location: IOOBUF_X32_Y0_N36
+arriaii_io_obuf \out[0]~output (
+	.i(!\g0~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[0]~output .bus_hold = "false";
+defparam \out[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X32_Y0_N2
+arriaii_io_obuf \out[1]~output (
+	.i(\g1~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[1]~output .bus_hold = "false";
+defparam \out[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X32_Y0_N67
+arriaii_io_obuf \out[2]~output (
+	.i(\g1~1_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[2]~output .bus_hold = "false";
+defparam \out[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X32_Y0_N98
+arriaii_io_obuf \out[3]~output (
+	.i(\g1~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out[3]~output .bus_hold = "false";
+defparam \out[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y0_N1
+arriaii_io_ibuf \sel[0]~input (
+	.i(sel[0]),
+	.ibar(gnd),
+	.o(\sel[0]~input_o ));
+// synopsys translate_off
+defparam \sel[0]~input .bus_hold = "false";
+defparam \sel[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X33_Y0_N32
+arriaii_io_ibuf \sel[1]~input (
+	.i(sel[1]),
+	.ibar(gnd),
+	.o(\sel[1]~input_o ));
+// synopsys translate_off
+defparam \sel[1]~input .bus_hold = "false";
+defparam \sel[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X32_Y1_N22
+arriaii_lcell_comb g0(
+// Equation(s):
+// \g0~combout  = ( \sel[1]~input_o  ) # ( !\sel[1]~input_o  & ( \sel[0]~input_o  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\sel[0]~input_o ),
+	.datae(gnd),
+	.dataf(!\sel[1]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\g0~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam g0.extended_lut = "off";
+defparam g0.lut_mask = 64'h00FF00FFFFFFFFFF;
+defparam g0.shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X32_Y1_N24
+arriaii_lcell_comb \g1~0 (
+// Equation(s):
+// \g1~0_combout  = ( \sel[1]~input_o  & ( !\sel[0]~input_o  ) )
+
+	.dataa(!\sel[0]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\sel[1]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\g1~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \g1~0 .extended_lut = "off";
+defparam \g1~0 .lut_mask = 64'h00000000AAAAAAAA;
+defparam \g1~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X32_Y1_N28
+arriaii_lcell_comb \g1~1 (
+// Equation(s):
+// \g1~1_combout  = ( !\sel[1]~input_o  & ( \sel[0]~input_o  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\sel[0]~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\sel[1]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\g1~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \g1~1 .extended_lut = "off";
+defparam \g1~1 .lut_mask = 64'h0F0F0F0F00000000;
+defparam \g1~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X32_Y1_N32
+arriaii_lcell_comb \g1~2 (
+// Equation(s):
+// \g1~2_combout  = ( \sel[1]~input_o  & ( \sel[0]~input_o  ) )
+
+	.dataa(!\sel[0]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\sel[1]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\g1~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \g1~2 .extended_lut = "off";
+defparam \g1~2 .lut_mask = 64'h0000000055555555;
+defparam \g1~2 .shared_arith = "off";
+// synopsys translate_on
+
+assign out[0] = \out[0]~output_o ;
+
+assign out[1] = \out[1]~output_o ;
+
+assign out[2] = \out[2]~output_o ;
+
+assign out[3] = \out[3]~output_o ;
+
+endmodule

@@ -1,0 +1,153 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do lfsr_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr {C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:14:33 on Feb 04,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr" C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr.sv 
+# -- Compiling module lfsr
+# 
+# Top level modules:
+# 	lfsr
+# End time: 00:14:33 on Feb 04,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:16:25 on Feb 04,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr.sv 
+# -- Compiling module lfsr
+# 
+# Top level modules:
+# 	lfsr
+# End time: 00:16:25 on Feb 04,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr_testbench.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:16:25 on Feb 04,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW4/Lab4/lfsr/lfsr_testbench.sv 
+# -- Compiling module lfsr_testbench
+# 
+# Top level modules:
+# 	lfsr_testbench
+# End time: 00:16:26 on Feb 04,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim rtl_work.lfsr_testbench
+# vsim rtl_work.lfsr_testbench 
+# Start time: 00:16:29 on Feb 04,2022
+# Loading sv_std.std
+# Loading rtl_work.lfsr_testbench
+# Loading rtl_work.lfsr
+add wave sim:/lfsr_testbench/design_inst/*
+run
+#  time=0,  reset=0  clk=0  load_seed=0  count= 0
+#  time=10,  reset=1  clk=1  load_seed=0  count= 0
+#  time=20,  reset=1  clk=0  load_seed=1  count= 0
+#  time=30,  reset=1  clk=1  load_seed=1  count=15
+#  time=40,  reset=1  clk=0  load_seed=0  count=15
+#  time=50,  reset=1  clk=1  load_seed=0  count=14
+#  time=60,  reset=1  clk=0  load_seed=0  count=14
+#  time=70,  reset=1  clk=1  load_seed=0  count=12
+#  time=80,  reset=1  clk=0  load_seed=0  count=12
+#  time=90,  reset=1  clk=1  load_seed=0  count= 8
+#  time=100,  reset=1  clk=0  load_seed=0  count= 8
+#  time=110,  reset=1  clk=1  load_seed=0  count= 1
+#  time=120,  reset=1  clk=0  load_seed=0  count= 1
+#  time=130,  reset=1  clk=1  load_seed=0  count= 2
+#  time=140,  reset=1  clk=0  load_seed=0  count= 2
+#  time=150,  reset=1  clk=1  load_seed=0  count= 4
+#  time=160,  reset=1  clk=0  load_seed=0  count= 4
+#  time=170,  reset=1  clk=1  load_seed=0  count= 9
+#  time=180,  reset=1  clk=0  load_seed=0  count= 9
+#  time=190,  reset=1  clk=1  load_seed=0  count= 3
+#  time=200,  reset=1  clk=0  load_seed=0  count= 3
+#  time=210,  reset=1  clk=1  load_seed=0  count= 6
+#  time=220,  reset=1  clk=0  load_seed=0  count= 6
+#  time=230,  reset=1  clk=1  load_seed=0  count=13
+#  time=240,  reset=1  clk=0  load_seed=0  count=13
+#  time=250,  reset=1  clk=1  load_seed=0  count=10
+#  time=260,  reset=1  clk=0  load_seed=0  count=10
+#  time=270,  reset=1  clk=1  load_seed=0  count= 5
+#  time=280,  reset=1  clk=0  load_seed=0  count= 5
+#  time=290,  reset=1  clk=1  load_seed=0  count=11
+#  time=300,  reset=1  clk=0  load_seed=0  count=11
+#  time=310,  reset=1  clk=1  load_seed=0  count= 7
+#  time=320,  reset=1  clk=0  load_seed=0  count= 7
+#  time=330,  reset=1  clk=1  load_seed=0  count=15
+#  time=340,  reset=1  clk=0  load_seed=0  count=15
+#  time=350,  reset=1  clk=1  load_seed=0  count=14
+#  time=360,  reset=1  clk=0  load_seed=0  count=14
+#  time=370,  reset=1  clk=1  load_seed=0  count=12
+#  time=380,  reset=1  clk=0  load_seed=0  count=12
+#  time=390,  reset=1  clk=1  load_seed=0  count= 8
+#  time=400,  reset=1  clk=0  load_seed=0  count= 8
+#  time=410,  reset=1  clk=1  load_seed=0  count= 1
+#  time=420,  reset=1  clk=0  load_seed=0  count= 1
+#  time=430,  reset=1  clk=1  load_seed=0  count= 2
+#  time=440,  reset=1  clk=0  load_seed=0  count= 2
+#  time=450,  reset=1  clk=1  load_seed=0  count= 4
+#  time=460,  reset=1  clk=0  load_seed=0  count= 4
+#  time=470,  reset=1  clk=1  load_seed=0  count= 9
+#  time=480,  reset=1  clk=0  load_seed=0  count= 9
+#  time=490,  reset=1  clk=1  load_seed=0  count= 3
+#  time=500,  reset=1  clk=0  load_seed=0  count= 3
+#  time=510,  reset=1  clk=1  load_seed=0  count= 6
+#  time=520,  reset=1  clk=0  load_seed=0  count= 6
+#  time=530,  reset=1  clk=1  load_seed=0  count=13
+#  time=540,  reset=1  clk=0  load_seed=0  count=13
+#  time=550,  reset=1  clk=1  load_seed=0  count=10
+#  time=560,  reset=1  clk=0  load_seed=0  count=10
+#  time=570,  reset=1  clk=1  load_seed=0  count= 5
+#  time=580,  reset=1  clk=0  load_seed=0  count= 5
+#  time=590,  reset=1  clk=1  load_seed=0  count=11
+#  time=600,  reset=1  clk=0  load_seed=0  count=11
+#  time=610,  reset=1  clk=1  load_seed=0  count= 7
+#  time=620,  reset=1  clk=0  load_seed=0  count= 7
+#  time=630,  reset=1  clk=1  load_seed=0  count=15
+#  time=640,  reset=1  clk=0  load_seed=0  count=15
+#  time=650,  reset=1  clk=1  load_seed=0  count=14
+#  time=660,  reset=1  clk=0  load_seed=0  count=14
+#  time=670,  reset=1  clk=1  load_seed=0  count=12
+#  time=680,  reset=1  clk=0  load_seed=0  count=12
+#  time=690,  reset=1  clk=1  load_seed=0  count= 8
+#  time=700,  reset=1  clk=0  load_seed=0  count= 8
+#  time=710,  reset=1  clk=1  load_seed=0  count= 1
+#  time=720,  reset=1  clk=0  load_seed=0  count= 1
+#  time=730,  reset=1  clk=1  load_seed=0  count= 2
+#  time=740,  reset=1  clk=0  load_seed=0  count= 2
+#  time=750,  reset=1  clk=1  load_seed=0  count= 4
+#  time=760,  reset=1  clk=0  load_seed=0  count= 4
+#  time=770,  reset=1  clk=1  load_seed=0  count= 9
+#  time=780,  reset=1  clk=0  load_seed=0  count= 9
+#  time=790,  reset=1  clk=1  load_seed=0  count= 3
+#  time=800,  reset=1  clk=0  load_seed=0  count= 3
+#  time=810,  reset=1  clk=1  load_seed=0  count= 6
+#  time=820,  reset=1  clk=0  load_seed=0  count= 6
+#  time=830,  reset=1  clk=1  load_seed=0  count=13
+#  time=840,  reset=1  clk=0  load_seed=0  count=13
+#  time=850,  reset=1  clk=1  load_seed=0  count=10
+#  time=860,  reset=1  clk=0  load_seed=0  count=10
+#  time=870,  reset=1  clk=1  load_seed=0  count= 5
+#  time=880,  reset=1  clk=0  load_seed=0  count= 5
+#  time=890,  reset=1  clk=1  load_seed=0  count=11
+#  time=900,  reset=1  clk=0  load_seed=0  count=11
+#  time=910,  reset=1  clk=1  load_seed=0  count= 7
+#  time=920,  reset=1  clk=0  load_seed=0  count= 7
+#  time=930,  reset=1  clk=1  load_seed=0  count=15
+#  time=940,  reset=1  clk=0  load_seed=0  count=15
+#  time=950,  reset=1  clk=1  load_seed=0  count=14
+#  time=960,  reset=1  clk=0  load_seed=0  count=14
+#  time=970,  reset=1  clk=1  load_seed=0  count=12
+#  time=980,  reset=1  clk=0  load_seed=0  count=12
+#  time=990,  reset=1  clk=1  load_seed=0  count= 8
+# End time: 14:56:31 on Feb 04,2022, Elapsed time: 14:40:02
+# Errors: 0, Warnings: 0

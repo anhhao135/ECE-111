@@ -1,0 +1,35 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Repos/ECE-111/Quartus-Projects/HW3/Lab3/universal_shift_register/simulation/modelsim
+vuniversal_shift_register
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1643348030
+!i10b 1
+!s100 DFLc0P2BzA23XhFZV2SDi3
+IizmkCCKnR3i_]Q6F3VDBQ0
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 universal_shift_register_svo_unit
+S1
+R0
+w1643347205
+8universal_shift_register.svo
+Funiversal_shift_register.svo
+L0 32
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1643348030.000000
+!s107 universal_shift_register.svo|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+.|universal_shift_register.svo|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+.
+tCvgOpt 0

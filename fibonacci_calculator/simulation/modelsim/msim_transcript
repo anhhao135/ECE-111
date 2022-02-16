@@ -1,0 +1,200 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do fibonacci_calculator_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator {C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/fibonacci_calculator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:22:43 on Jan 11,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator" C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/fibonacci_calculator.sv 
+# -- Compiling module fibonacci_calculator
+# 
+# Top level modules:
+# 	fibonacci_calculator
+# End time: 22:22:43 on Jan 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/fibonacci_calculator.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:31 on Jan 11,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/fibonacci_calculator.sv 
+# -- Compiling module fibonacci_calculator
+# 
+# Top level modules:
+# 	fibonacci_calculator
+# End time: 22:23:31 on Jan 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/tb_fibonacci_calculator.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:31 on Jan 11,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/tb_fibonacci_calculator.sv 
+# -- Compiling module tb_fibonacci_calculator
+# 
+# Top level modules:
+# 	tb_fibonacci_calculator
+# End time: 22:23:31 on Jan 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/fibonacci_calculator.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:34 on Jan 11,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/fibonacci_calculator.sv 
+# -- Compiling module fibonacci_calculator
+# 
+# Top level modules:
+# 	fibonacci_calculator
+# End time: 22:23:34 on Jan 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/tb_fibonacci_calculator.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:34 on Jan 11,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/tb_fibonacci_calculator.sv 
+# -- Compiling module tb_fibonacci_calculator
+# 
+# Top level modules:
+# 	tb_fibonacci_calculator
+# End time: 22:23:34 on Jan 11,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.fibonacci_calculator
+# vsim work.fibonacci_calculator 
+# Start time: 22:24:09 on Jan 11,2022
+# Loading sv_std.std
+# Loading work.fibonacci_calculator
+add wave sim:/fibonacci_calculator/*
+run
+run
+run
+run -all
+run -all
+run -all
+run -all
+restart
+vsim work.tb_fibonacci_calculator
+# End time: 22:27:43 on Jan 11,2022, Elapsed time: 0:03:34
+# Errors: 0, Warnings: 0
+# vsim work.tb_fibonacci_calculator 
+# Start time: 22:27:43 on Jan 11,2022
+# Loading sv_std.std
+# Loading work.tb_fibonacci_calculator
+# Loading work.fibonacci_calculator
+add wave sim:/tb_fibonacci_calculator/*
+run
+restart
+run
+# state = COMPUTE, count =   5, R0 =    1, R1 =    0
+# state = COMPUTE, count =   4, R0 =    1, R1 =    1
+# state = COMPUTE, count =   3, R0 =    2, R1 =    1
+# state = COMPUTE, count =   2, R0 =    3, R1 =    2
+# 
+# ---------------------
+# 
+# Input: 5
+# 
+# CORRECT RESULT:     5, GOOD JOB!
+# 
+# ---------------------
+# 
+# state = COMPUTE, count =   9, R0 =    1, R1 =    0
+# state = COMPUTE, count =   8, R0 =    1, R1 =    1
+# state = COMPUTE, count =   7, R0 =    2, R1 =    1
+# state = COMPUTE, count =   6, R0 =    3, R1 =    2
+# state = COMPUTE, count =   5, R0 =    5, R1 =    3
+# state = COMPUTE, count =   4, R0 =    8, R1 =    5
+# state = COMPUTE, count =   3, R0 =   13, R1 =    8
+# state = COMPUTE, count =   2, R0 =   21, R1 =   13
+# 
+# ---------------------
+# 
+# Input: 9
+# 
+# CORRECT RESULT:    34, GOOD JOB!
+# 
+# ---------------------
+# 
+# state = COMPUTE, count =  12, R0 =    1, R1 =    0
+# state = COMPUTE, count =  11, R0 =    1, R1 =    1
+# state = COMPUTE, count =  10, R0 =    2, R1 =    1
+# state = COMPUTE, count =   9, R0 =    3, R1 =    2
+# state = COMPUTE, count =   8, R0 =    5, R1 =    3
+# state = COMPUTE, count =   7, R0 =    8, R1 =    5
+# state = COMPUTE, count =   6, R0 =   13, R1 =    8
+# state = COMPUTE, count =   5, R0 =   21, R1 =   13
+# state = COMPUTE, count =   4, R0 =   34, R1 =   21
+# state = COMPUTE, count =   3, R0 =   55, R1 =   34
+# state = COMPUTE, count =   2, R0 =   89, R1 =   55
+# 
+# ---------------------
+# 
+# Input: 12
+# 
+# CORRECT RESULT:   144, GOOD JOB!
+# 
+# ---------------------
+# 
+# ** Note: $stop    : C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/tb_fibonacci_calculator.sv(119)
+#    Time: 990 ps  Iteration: 1  Instance: /tb_fibonacci_calculator
+# Break in Module tb_fibonacci_calculator at C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/tb_fibonacci_calculator.sv line 119
+add wave sim:/tb_fibonacci_calculator/uut/*
+restart
+run
+# state = COMPUTE, count =   5, R0 =    1, R1 =    0
+# state = COMPUTE, count =   4, R0 =    1, R1 =    1
+# state = COMPUTE, count =   3, R0 =    2, R1 =    1
+# state = COMPUTE, count =   2, R0 =    3, R1 =    2
+# 
+# ---------------------
+# 
+# Input: 5
+# 
+# CORRECT RESULT:     5, GOOD JOB!
+# 
+# ---------------------
+# 
+# state = COMPUTE, count =   9, R0 =    1, R1 =    0
+# state = COMPUTE, count =   8, R0 =    1, R1 =    1
+# state = COMPUTE, count =   7, R0 =    2, R1 =    1
+# state = COMPUTE, count =   6, R0 =    3, R1 =    2
+# state = COMPUTE, count =   5, R0 =    5, R1 =    3
+# state = COMPUTE, count =   4, R0 =    8, R1 =    5
+# state = COMPUTE, count =   3, R0 =   13, R1 =    8
+# state = COMPUTE, count =   2, R0 =   21, R1 =   13
+# 
+# ---------------------
+# 
+# Input: 9
+# 
+# CORRECT RESULT:    34, GOOD JOB!
+# 
+# ---------------------
+# 
+# state = COMPUTE, count =  12, R0 =    1, R1 =    0
+# state = COMPUTE, count =  11, R0 =    1, R1 =    1
+# state = COMPUTE, count =  10, R0 =    2, R1 =    1
+# state = COMPUTE, count =   9, R0 =    3, R1 =    2
+# state = COMPUTE, count =   8, R0 =    5, R1 =    3
+# state = COMPUTE, count =   7, R0 =    8, R1 =    5
+# state = COMPUTE, count =   6, R0 =   13, R1 =    8
+# state = COMPUTE, count =   5, R0 =   21, R1 =   13
+# state = COMPUTE, count =   4, R0 =   34, R1 =   21
+# state = COMPUTE, count =   3, R0 =   55, R1 =   34
+# state = COMPUTE, count =   2, R0 =   89, R1 =   55
+# 
+# ---------------------
+# 
+# Input: 12
+# 
+# CORRECT RESULT:   144, GOOD JOB!
+# 
+# ---------------------
+# 
+# ** Note: $stop    : C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/tb_fibonacci_calculator.sv(119)
+#    Time: 990 ps  Iteration: 1  Instance: /tb_fibonacci_calculator
+# Break in Module tb_fibonacci_calculator at C:/Repos/ECE-111/Quartus-Projects/fibonacci_calculator/tb_fibonacci_calculator.sv line 119
+# End time: 19:33:58 on Jan 13,2022, Elapsed time: 45:06:15
+# Errors: 0, Warnings: 0

@@ -1,0 +1,383 @@
+// Copyright (C) 2019  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
+
+// DATE "02/13/2022 13:06:17"
+
+// 
+// Device: Altera EP2AGX45DF29I5 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (SystemVerilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module gray_code_to_binary_convertor (
+	clk,
+	rstn,
+	gray_value,
+	binary_value);
+input 	logic clk ;
+input 	logic rstn ;
+input 	logic [3:0] gray_value ;
+output 	logic [3:0] binary_value ;
+
+// Design Ports Information
+// binary_value[0]	=>  Location: PIN_AB7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// binary_value[1]	=>  Location: PIN_AC5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// binary_value[2]	=>  Location: PIN_AA6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// binary_value[3]	=>  Location: PIN_AD4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// gray_value[2]	=>  Location: PIN_Y5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// gray_value[3]	=>  Location: PIN_Y6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// gray_value[1]	=>  Location: PIN_AB4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// gray_value[0]	=>  Location: PIN_AC4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_AE15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// rstn	=>  Location: PIN_AF15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \binary_value[0]~output_o ;
+wire \binary_value[1]~output_o ;
+wire \binary_value[2]~output_o ;
+wire \binary_value[3]~output_o ;
+wire \clk~input_o ;
+wire \clk~inputclkctrl_outclk ;
+wire \gray_value[1]~input_o ;
+wire \gray_value[2]~input_o ;
+wire \gray_value[3]~input_o ;
+wire \gray_value[0]~input_o ;
+wire \gray_to_binary~0_combout ;
+wire \rstn~input_o ;
+wire \rstn~inputclkctrl_outclk ;
+wire \binary_value[0]~reg0_q ;
+wire \gray_to_binary~1_combout ;
+wire \binary_value[1]~reg0_q ;
+wire \gray_to_binary~2_combout ;
+wire \binary_value[2]~reg0_q ;
+wire \binary_value[3]~reg0_q ;
+
+
+// Location: IOOBUF_X59_Y4_N36
+arriaii_io_obuf \binary_value[0]~output (
+	.i(\binary_value[0]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\binary_value[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \binary_value[0]~output .bus_hold = "false";
+defparam \binary_value[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X59_Y4_N2
+arriaii_io_obuf \binary_value[1]~output (
+	.i(\binary_value[1]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\binary_value[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \binary_value[1]~output .bus_hold = "false";
+defparam \binary_value[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X59_Y4_N98
+arriaii_io_obuf \binary_value[2]~output (
+	.i(\binary_value[2]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\binary_value[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \binary_value[2]~output .bus_hold = "false";
+defparam \binary_value[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X59_Y4_N67
+arriaii_io_obuf \binary_value[3]~output (
+	.i(\binary_value[3]~reg0_q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\binary_value[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \binary_value[3]~output .bus_hold = "false";
+defparam \binary_value[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X26_Y0_N32
+arriaii_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G7
+arriaii_clkena \clk~inputclkctrl (
+	.inclk(\clk~input_o ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clk~inputclkctrl_outclk ),
+	.enaout());
+// synopsys translate_off
+defparam \clk~inputclkctrl .clock_type = "global clock";
+defparam \clk~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: IOIBUF_X59_Y7_N32
+arriaii_io_ibuf \gray_value[1]~input (
+	.i(gray_value[1]),
+	.ibar(gnd),
+	.o(\gray_value[1]~input_o ));
+// synopsys translate_off
+defparam \gray_value[1]~input .bus_hold = "false";
+defparam \gray_value[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X59_Y7_N63
+arriaii_io_ibuf \gray_value[2]~input (
+	.i(gray_value[2]),
+	.ibar(gnd),
+	.o(\gray_value[2]~input_o ));
+// synopsys translate_off
+defparam \gray_value[2]~input .bus_hold = "false";
+defparam \gray_value[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X59_Y7_N1
+arriaii_io_ibuf \gray_value[3]~input (
+	.i(gray_value[3]),
+	.ibar(gnd),
+	.o(\gray_value[3]~input_o ));
+// synopsys translate_off
+defparam \gray_value[3]~input .bus_hold = "false";
+defparam \gray_value[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X59_Y7_N94
+arriaii_io_ibuf \gray_value[0]~input (
+	.i(gray_value[0]),
+	.ibar(gnd),
+	.o(\gray_value[0]~input_o ));
+// synopsys translate_off
+defparam \gray_value[0]~input .bus_hold = "false";
+defparam \gray_value[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X58_Y4_N2
+arriaii_lcell_comb \gray_to_binary~0 (
+// Equation(s):
+// \gray_to_binary~0_combout  = ( \gray_value[3]~input_o  & ( \gray_value[0]~input_o  & ( !\gray_value[1]~input_o  $ (!\gray_value[2]~input_o ) ) ) ) # ( !\gray_value[3]~input_o  & ( \gray_value[0]~input_o  & ( !\gray_value[1]~input_o  $ 
+// (\gray_value[2]~input_o ) ) ) ) # ( \gray_value[3]~input_o  & ( !\gray_value[0]~input_o  & ( !\gray_value[1]~input_o  $ (\gray_value[2]~input_o ) ) ) ) # ( !\gray_value[3]~input_o  & ( !\gray_value[0]~input_o  & ( !\gray_value[1]~input_o  $ 
+// (!\gray_value[2]~input_o ) ) ) )
+
+	.dataa(!\gray_value[1]~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\gray_value[2]~input_o ),
+	.datae(!\gray_value[3]~input_o ),
+	.dataf(!\gray_value[0]~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\gray_to_binary~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \gray_to_binary~0 .extended_lut = "off";
+defparam \gray_to_binary~0 .lut_mask = 64'h55AAAA55AA5555AA;
+defparam \gray_to_binary~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: IOIBUF_X26_Y0_N94
+arriaii_io_ibuf \rstn~input (
+	.i(rstn),
+	.ibar(gnd),
+	.o(\rstn~input_o ));
+// synopsys translate_off
+defparam \rstn~input .bus_hold = "false";
+defparam \rstn~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G6
+arriaii_clkena \rstn~inputclkctrl (
+	.inclk(\rstn~input_o ),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\rstn~inputclkctrl_outclk ),
+	.enaout());
+// synopsys translate_off
+defparam \rstn~inputclkctrl .clock_type = "global clock";
+defparam \rstn~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: FF_X58_Y4_N3
+dffeas \binary_value[0]~reg0 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\gray_to_binary~0_combout ),
+	.asdata(vcc),
+	.clrn(\rstn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\binary_value[0]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \binary_value[0]~reg0 .is_wysiwyg = "true";
+defparam \binary_value[0]~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X58_Y4_N24
+arriaii_lcell_comb \gray_to_binary~1 (
+// Equation(s):
+// \gray_to_binary~1_combout  = ( \gray_value[3]~input_o  & ( !\gray_value[2]~input_o  $ (\gray_value[1]~input_o ) ) ) # ( !\gray_value[3]~input_o  & ( !\gray_value[2]~input_o  $ (!\gray_value[1]~input_o ) ) )
+
+	.dataa(!\gray_value[2]~input_o ),
+	.datab(gnd),
+	.datac(!\gray_value[1]~input_o ),
+	.datad(gnd),
+	.datae(!\gray_value[3]~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\gray_to_binary~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \gray_to_binary~1 .extended_lut = "off";
+defparam \gray_to_binary~1 .lut_mask = 64'h5A5AA5A55A5AA5A5;
+defparam \gray_to_binary~1 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X58_Y4_N25
+dffeas \binary_value[1]~reg0 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\gray_to_binary~1_combout ),
+	.asdata(vcc),
+	.clrn(\rstn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\binary_value[1]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \binary_value[1]~reg0 .is_wysiwyg = "true";
+defparam \binary_value[1]~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X58_Y4_N28
+arriaii_lcell_comb \gray_to_binary~2 (
+// Equation(s):
+// \gray_to_binary~2_combout  = ( \gray_value[3]~input_o  & ( !\gray_value[2]~input_o  ) ) # ( !\gray_value[3]~input_o  & ( \gray_value[2]~input_o  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\gray_value[2]~input_o ),
+	.datad(gnd),
+	.datae(!\gray_value[3]~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\gray_to_binary~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \gray_to_binary~2 .extended_lut = "off";
+defparam \gray_to_binary~2 .lut_mask = 64'h0F0FF0F00F0FF0F0;
+defparam \gray_to_binary~2 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X58_Y4_N29
+dffeas \binary_value[2]~reg0 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\gray_to_binary~2_combout ),
+	.asdata(vcc),
+	.clrn(\rstn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\binary_value[2]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \binary_value[2]~reg0 .is_wysiwyg = "true";
+defparam \binary_value[2]~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X58_Y4_N35
+dffeas \binary_value[3]~reg0 (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\gray_value[3]~input_o ),
+	.clrn(\rstn~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\binary_value[3]~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \binary_value[3]~reg0 .is_wysiwyg = "true";
+defparam \binary_value[3]~reg0 .power_up = "low";
+// synopsys translate_on
+
+assign binary_value[0] = \binary_value[0]~output_o ;
+
+assign binary_value[1] = \binary_value[1]~output_o ;
+
+assign binary_value[2] = \binary_value[2]~output_o ;
+
+assign binary_value[3] = \binary_value[3]~output_o ;
+
+endmodule

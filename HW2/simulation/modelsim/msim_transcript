@@ -1,0 +1,172 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do up_down_counter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter {C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:18:44 on Jan 20,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter" C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter.sv 
+# -- Compiling module up_down_counter
+# 
+# Top level modules:
+# 	up_down_counter
+# End time: 20:18:44 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter {C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:18:44 on Jan 20,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter" C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_counter.sv 
+# -- Compiling module up_counter
+# 
+# Top level modules:
+# 	up_counter
+# End time: 20:18:44 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter {C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/mux_2x1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:18:44 on Jan 20,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter" C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/mux_2x1.sv 
+# -- Compiling module mux_2x1
+# 
+# Top level modules:
+# 	mux_2x1
+# End time: 20:18:44 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter {C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/down_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:18:44 on Jan 20,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter" C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/down_counter.sv 
+# -- Compiling module down_counter
+# 
+# Top level modules:
+# 	down_counter
+# End time: 20:18:44 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:18:55 on Jan 20,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter.sv 
+# -- Compiling module up_down_counter
+# 
+# Top level modules:
+# 	up_down_counter
+# End time: 20:18:55 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter_testbench.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:18:55 on Jan 20,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter_testbench.sv 
+# -- Compiling module up_down_counter_testbench
+# 
+# Top level modules:
+# 	up_down_counter_testbench
+# End time: 20:18:55 on Jan 20,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.up_down_counter_testbench
+# vsim work.up_down_counter_testbench 
+# Start time: 20:18:58 on Jan 20,2022
+# Loading sv_std.std
+# Loading work.up_down_counter_testbench
+# Loading work.up_down_counter
+# Loading work.up_counter
+# Loading work.down_counter
+# Loading work.mux_2x1
+add wave  \
+sim:/up_down_counter_testbench/design_instance/clk \
+sim:/up_down_counter_testbench/design_instance/clear \
+sim:/up_down_counter_testbench/design_instance/select \
+sim:/up_down_counter_testbench/design_instance/count_value
+run -all
+#  time=0,  clear=1  clk=1  count= 0
+#  time=10,  clear=1  clk=0  count= 0
+#  time=20,  clear=0  clk=1  count= 1
+#  time=30,  clear=0  clk=0  count= 1
+#  time=40,  clear=0  clk=1  count= 2
+#  time=50,  clear=0  clk=0  count= 2
+#  time=60,  clear=0  clk=1  count= 3
+#  time=70,  clear=0  clk=0  count= 3
+#  time=80,  clear=0  clk=1  count= 4
+#  time=90,  clear=0  clk=0  count= 4
+#  time=100,  clear=0  clk=1  count= 5
+#  time=110,  clear=0  clk=0  count= 5
+#  time=120,  clear=0  clk=1  count= 6
+#  time=130,  clear=0  clk=0  count= 6
+#  time=140,  clear=0  clk=1  count= 7
+#  time=150,  clear=0  clk=0  count= 7
+#  time=160,  clear=0  clk=1  count= 8
+#  time=170,  clear=0  clk=0  count= 8
+#  time=180,  clear=0  clk=1  count= 9
+#  time=190,  clear=0  clk=0  count= 9
+#  time=200,  clear=0  clk=1  count=10
+#  time=210,  clear=0  clk=0  count=10
+#  time=220,  clear=0  clk=1  count=11
+#  time=230,  clear=0  clk=0  count=11
+#  time=240,  clear=0  clk=1  count=12
+#  time=250,  clear=0  clk=0  count=12
+#  time=260,  clear=0  clk=1  count=13
+#  time=270,  clear=0  clk=0  count=13
+#  time=280,  clear=0  clk=1  count=14
+#  time=290,  clear=0  clk=0  count=14
+#  time=300,  clear=0  clk=1  count=15
+#  time=310,  clear=0  clk=0  count=15
+#  time=320,  clear=0  clk=1  count= 0
+#  time=330,  clear=0  clk=0  count= 0
+#  time=340,  clear=1  clk=1  count=15
+#  time=350,  clear=1  clk=0  count=15
+#  time=360,  clear=0  clk=1  count=14
+#  time=370,  clear=0  clk=0  count=14
+#  time=380,  clear=0  clk=1  count=13
+#  time=390,  clear=0  clk=0  count=13
+#  time=400,  clear=0  clk=1  count=12
+#  time=410,  clear=0  clk=0  count=12
+#  time=420,  clear=0  clk=1  count=11
+#  time=430,  clear=0  clk=0  count=11
+#  time=440,  clear=0  clk=1  count=10
+#  time=450,  clear=0  clk=0  count=10
+#  time=460,  clear=0  clk=1  count= 9
+#  time=470,  clear=0  clk=0  count= 9
+#  time=480,  clear=0  clk=1  count= 8
+#  time=490,  clear=0  clk=0  count= 8
+#  time=500,  clear=0  clk=1  count= 7
+#  time=510,  clear=0  clk=0  count= 7
+#  time=520,  clear=0  clk=1  count= 6
+#  time=530,  clear=0  clk=0  count= 6
+#  time=540,  clear=0  clk=1  count= 5
+#  time=550,  clear=0  clk=0  count= 5
+#  time=560,  clear=0  clk=1  count= 4
+#  time=570,  clear=0  clk=0  count= 4
+#  time=580,  clear=0  clk=1  count= 3
+#  time=590,  clear=0  clk=0  count= 3
+#  time=600,  clear=0  clk=1  count= 2
+#  time=610,  clear=0  clk=0  count= 2
+#  time=620,  clear=0  clk=1  count= 1
+#  time=630,  clear=0  clk=0  count= 1
+#  time=640,  clear=0  clk=1  count= 0
+#  time=650,  clear=0  clk=0  count= 0
+#  time=660,  clear=0  clk=1  count=15
+#  time=670,  clear=0  clk=0  count=15
+#  time=680,  clear=1  clk=1  count= 0
+#  time=690,  clear=1  clk=0  count= 0
+#  time=700,  clear=1  clk=1  count= 0
+#  time=710,  clear=1  clk=0  count= 0
+#  time=720,  clear=1  clk=1  count= 0
+#  time=730,  clear=1  clk=0  count= 0
+#  time=740,  clear=1  clk=1  count= 0
+#  time=750,  clear=1  clk=0  count= 0
+#  time=760,  clear=1  clk=1  count= 0
+#  time=770,  clear=1  clk=0  count= 0
+# ** Note: $finish    : C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter_testbench.sv(42)
+#    Time: 780 ns  Iteration: 0  Instance: /up_down_counter_testbench
+# 1
+# Break in Module up_down_counter_testbench at C:/Repos/ECE-111/Quartus-Projects/HW2/Lab2/up_down_counter/up_down_counter_testbench.sv line 42
+# End time: 23:42:39 on Jan 24,2022, Elapsed time: 99:23:41
+# Errors: 0, Warnings: 0
