@@ -1,0 +1,183 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Repos/ECE-111/HW7/Lab7/uart_control_system/simulation/modelsim
+vuart_control_system
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1645612606
+!i10b 1
+!s100 T3S_b0cPJ4L`Z73dz?XA:0
+I?NDJ1B<50SSZYkYD1nh^>0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 uart_control_system_sv_unit
+S1
+R0
+w1645608179
+8C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_control_system.sv
+FC:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_control_system.sv
+L0 2
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1645612606.000000
+!s107 C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_control_system.sv|
+!s90 -reportprogress|300|-work|work|C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_control_system.sv|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vuart_control_system_testbench
+R1
+R2
+!i10b 1
+!s100 ccKfiX6NSKLP2i_XZXNJ51
+Izm1d:[k8L^N:@8Ij_:52l1
+R3
+!s105 uart_control_system_testbench_sv_unit
+S1
+R0
+w1645289600
+8C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_control_system_testbench.sv
+FC:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_control_system_testbench.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_control_system_testbench.sv|
+!s90 -reportprogress|300|-work|work|C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_control_system_testbench.sv|
+!i113 1
+R6
+R7
+vuart_rx
+R1
+Z8 !s110 1645612598
+!i10b 1
+!s100 8cFK^DbQKkAgHz7NnkRKJ0
+I=>0P:AD:lHdEiB[74OM`z0
+R3
+!s105 uart_rx_sv_unit
+S1
+R0
+w1645598643
+8C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx/uart_rx.sv
+FC:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx/uart_rx.sv
+L0 2
+R4
+r1
+!s85 0
+31
+Z9 !s108 1645612598.000000
+!s107 C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx/uart_rx.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx|C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx/uart_rx.sv|
+!i113 1
+Z10 o-sv -work work
+!s92 -sv -work work +incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx
+R7
+vuart_rx_control
+R1
+R8
+!i10b 1
+!s100 =HBf0Wb08hIe:InKfJKPX0
+I>i5;OGNh:R]4NbazW=EoS2
+R3
+!s105 uart_rx_control_sv_unit
+S1
+R0
+w1645611662
+8C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_rx_control.sv
+FC:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_rx_control.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_rx_control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Repos/ECE-111/HW7/Lab7/uart_control_system|C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_rx_control.sv|
+!i113 1
+R10
+Z11 !s92 -sv -work work +incdir+C:/Repos/ECE-111/HW7/Lab7/uart_control_system
+R7
+vuart_top
+R1
+R8
+!i10b 1
+!s100 `29ML@1TY31kDPUl]]08f3
+IFQ:O<<[el0H><TK[GF;9h1
+R3
+!s105 uart_top_sv_unit
+S1
+R0
+w1645602489
+8C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top.sv
+FC:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top|C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top.sv|
+!i113 1
+R10
+!s92 -sv -work work +incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top
+R7
+vuart_tx
+R1
+R8
+!i10b 1
+!s100 bURW174S]V5Rj^OT?c?Q71
+IOMRmDQhJBm@Tb9FcJNKgW3
+R3
+!s105 uart_tx_sv_unit
+S1
+R0
+w1645322874
+8C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx/uart_tx.sv
+FC:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx/uart_tx.sv
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1645612597.000000
+!s107 C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx/uart_tx.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx|C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx/uart_tx.sv|
+!i113 1
+R10
+!s92 -sv -work work +incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx
+R7
+vuart_tx_control
+R1
+R8
+!i10b 1
+!s100 J1in=:7D>[a4:RJCol4F42
+I1imikSDl=J`0?6bj?gkj;1
+R3
+!s105 uart_tx_control_sv_unit
+S1
+R0
+w1645612561
+8C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_tx_control.sv
+FC:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_tx_control.sv
+L0 2
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_tx_control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Repos/ECE-111/HW7/Lab7/uart_control_system|C:/Repos/ECE-111/HW7/Lab7/uart_control_system/uart_tx_control.sv|
+!i113 1
+R10
+R11
+R7

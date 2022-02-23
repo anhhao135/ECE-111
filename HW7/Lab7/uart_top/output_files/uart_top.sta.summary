@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 900mV 100C Model Setup 'rx_clk'
+Slack : -0.866
+TNS   : -17.115
+
+Type  : Slow 900mV 100C Model Setup 'tx_clk'
+Slack : -0.707
+TNS   : -5.650
+
+Type  : Slow 900mV 100C Model Hold 'tx_clk'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Hold 'rx_clk'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'rx_clk'
+Slack : -2.846
+TNS   : -41.342
+
+Type  : Slow 900mV 100C Model Minimum Pulse Width 'tx_clk'
+Slack : -2.846
+TNS   : -25.292
+
+Type  : Slow 900mV -40C Model Setup 'rx_clk'
+Slack : -0.836
+TNS   : -16.367
+
+Type  : Slow 900mV -40C Model Setup 'tx_clk'
+Slack : -0.691
+TNS   : -5.640
+
+Type  : Slow 900mV -40C Model Hold 'tx_clk'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Hold 'rx_clk'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'rx_clk'
+Slack : -2.846
+TNS   : -41.303
+
+Type  : Slow 900mV -40C Model Minimum Pulse Width 'tx_clk'
+Slack : -2.846
+TNS   : -25.285
+
+Type  : Fast 900mV -40C Model Setup 'rx_clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Setup 'tx_clk'
+Slack : 0.270
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'tx_clk'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'rx_clk'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'rx_clk'
+Slack : -2.846
+TNS   : -18.926
+
+Type  : Fast 900mV -40C Model Minimum Pulse Width 'tx_clk'
+Slack : -2.846
+TNS   : -12.244
+
+------------------------------------------------------------

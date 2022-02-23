@@ -1,0 +1,83 @@
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do uart_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx {C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx/uart_tx.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:44 on Feb 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx" C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_tx/uart_tx.sv 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 23:48:44 on Feb 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx {C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx/uart_rx.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:44 on Feb 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx" C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_rx/uart_rx.sv 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 23:48:44 on Feb 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top {C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:48:44 on Feb 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Repos/ECE-111/HW7/Lab7/uart_top" C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top.sv 
+# -- Compiling module uart_top
+# 
+# Top level modules:
+# 	uart_top
+# End time: 23:48:44 on Feb 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:49:11 on Feb 22,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top.sv 
+# -- Compiling module uart_top
+# 
+# Top level modules:
+# 	uart_top
+# End time: 23:49:11 on Feb 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top_testbench.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:49:11 on Feb 22,2022
+# vlog -reportprogress 300 -work work C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top_testbench.sv 
+# -- Compiling module uart_top_testbench
+# 
+# Top level modules:
+# 	uart_top_testbench
+# End time: 23:49:11 on Feb 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.uart_top_testbench
+# vsim work.uart_top_testbench 
+# Start time: 23:49:18 on Feb 22,2022
+# Loading sv_std.std
+# Loading work.uart_top_testbench
+# Loading work.uart_top
+# Loading work.uart_tx
+# Loading work.uart_rx
+add wave -r sim:/uart_top_testbench/DUT/*
+run -all
+# Test Passed - Correct Byte Received time=                3150  expected=a5   actual=a5
+# Test Passed - Correct Byte Received time=                6430  expected=a8   actual=a8
+# Test Passed - Correct Byte Received time=                9710  expected=ab   actual=ab
+# Test Passed - Correct Byte Received time=               12990  expected=ae   actual=ae
+# ** Note: $finish    : C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top_testbench.sv(109)
+#    Time: 13650 ns  Iteration: 0  Instance: /uart_top_testbench
+# 1
+# Break in Module uart_top_testbench at C:/Repos/ECE-111/HW7/Lab7/uart_top/uart_top_testbench.sv line 109
+# End time: 00:03:44 on Feb 23,2022, Elapsed time: 0:14:26
+# Errors: 0, Warnings: 0

@@ -1,0 +1,20 @@
+Analysis & Synthesis Status : Successful - Wed Feb 23 02:36:10 2022
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : uart_control_system
+Top-level Entity Name : uart_control_system
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 223
+    Memory ALUTs : 0
+    Dedicated logic registers : 146
+Total registers : 146
+Total pins : 30
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
