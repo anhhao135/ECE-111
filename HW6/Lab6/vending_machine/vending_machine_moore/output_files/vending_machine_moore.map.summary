@@ -1,0 +1,20 @@
+Analysis & Synthesis Status : Successful - Mon Feb 21 13:58:36 2022
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : vending_machine_moore
+Top-level Entity Name : vending_machine_moore
+Family : Arria II GX
+Logic utilization : N/A
+    Combinational ALUTs : 4
+    Memory ALUTs : 0
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 5
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
+Total DLLs : 0
